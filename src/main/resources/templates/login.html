@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en"
+      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xmlns:th="http://www.thymeleft.org"
+      xsi:schemaLocation="http://www.thymeleft.org ">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+</head>
+<body>
+<h2>Login page</h2>
+<form th:method="post" th:action="@{/login}">
+  <lable>
+    Username:
+    <input type="text" name="username"/>
+  </lable>
+  <lable>
+    Password:
+    <input type="password" name="password"/>
+  </lable>
+  <button type="submit">Login</button>
+
+</form>
+<button onclick="registerAuth()">Register as Author</button>
+<script>
+    function registerAuth() {
+        window.location.href = "http://localhost:8080/registerAuth";
+    }
+</script>
+
+<button onclick="registerReader()">Register as reader</button>
+<script>
+    function registerReader() {
+        window.location.href = "http://localhost:8080/registerReader";
+    }
+</script>
+</body>
+</html>

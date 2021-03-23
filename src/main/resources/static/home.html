@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en"
+      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xmlns:th="http://www.thymeleft.org"
+      xsi:schemaLocation="http://www.thymeleft.org ">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Home</title>
+</head>
+<body>
+<h2>Home page</h2>
+
+
+<button onclick="readers()">Readers</button>
+<script>
+    function readers() {
+        window.location.href = "http://localhost:8080/api/v1/reader";
+    }
+</script>
+<button onclick="authors()">Authors</button>
+<script>
+    function authors() {
+        window.location.href = "http://localhost:8080/api/v1/author";
+    }
+</script>
+<button onclick="admins()">Admins</button>
+<script>
+    function admins() {
+        window.location.href = "http://localhost:8080/api/v1/admin";
+    }
+</script>
+<button onclick="books()">Books</button>
+<script>
+    function books() {
+        window.location.href = "http://localhost:8080/books";
+    }
+</script>
+
+<button onclick="logout()">Logout</button>
+<script>
+    function logout() {
+        window.location.href = "http://localhost:8080/logout";
+    }
+</script>
+</body>
+</html>

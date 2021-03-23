@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en"
+      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xmlns:th="http://www.thymeleft.org"
+      xsi:schemaLocation="http://www.thymeleft.org ">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+</head>
+<body>
+<h2>Register as author!</h2>
+<form th:method="post" th:action="@{/registerAuth}">
+  <lable>
+    Email:
+    <input type="text" name="email"/>
+  </lable>
+  <lable>
+    Username:
+    <input type="text" name="username"/>
+  </lable>
+  <lable>
+    Name:
+    <input type="text" name="fullName"/>
+  </lable>
+  <lable>
+    Password:
+    <input type="password" name="password"/>
+  </lable>
+
+  <lable>
+    ConfirmPassword:
+    <input type="password" name="passwordConfirmation"/>
+  </lable>
+
+  <button type="submit">Register</button>
+</form>
+<button onclick="goBack()">Go Back</button>
+<script>
+    function goBack() {
+        window.history.back();
+    }
+</script>
+</body>
+</html>
